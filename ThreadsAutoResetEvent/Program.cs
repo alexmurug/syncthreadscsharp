@@ -19,6 +19,7 @@ internal class Program
     {
         are1.WaitOne();
         Console.WriteLine(obj);
+        are1.Set();
         are2.Set();
     }
 
@@ -26,6 +27,7 @@ internal class Program
     {
         are1.WaitOne();
         Console.WriteLine(obj);
+        are1.Set();
         are3.Set();
     }
 
@@ -33,24 +35,28 @@ internal class Program
     {
         are3.WaitOne();
         Console.WriteLine(obj);
+        are3.Set();
     }
 
     private static void Show_Thread5(object obj)
     {
         are2.WaitOne();
         Console.WriteLine(obj);
+        are2.Set();
     }
 
     private static void Show_Thread6(object obj)
     {
         are2.WaitOne();
         Console.WriteLine(obj);
+        are2.Set();
     }
 
     private static void Show_Thread7(object obj)
     {
         are3.WaitOne();
         Console.WriteLine(obj);
+        are3.Set();
     }
 
     private static void Main()
